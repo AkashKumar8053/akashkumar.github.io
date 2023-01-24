@@ -1,0 +1,97 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery|grid html & css</title>
+    <link rel="stylesheet" href="/#grid.css">
+</head>
+<style>
+    .A{
+    padding: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-auto-rows:250px;
+    grid-auto-flow: dense;
+}
+.v{
+    grid-row: span 2;
+}
+.H{
+    grid-column: span 2;
+}
+.B{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+.A  div img{
+
+width:100px ;
+height: 100px;
+object-fit: cover;
+}
+@media (max-width:560px){
+    v.{
+        grid-row: span 1;
+    }
+    .H{
+        grid-column: span 1;
+    }
+    B.{
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+}
+
+
+
+    
+</style>
+
+<body>
+    
+    
+    <h1>Gallery</h1>
+    <div class="A">
+        <div>
+            <img src="/44b208e04a532e7077071d32baebf666.jpeg" alt="">
+        </div>
+        <div class="v">
+            <img src="/chimpanzee-sitting-sad-mammal.jpg" alt="">
+        </div>
+        <div class="H">
+            <img src="/penguins-emperor-antarctic-life-52509.jpeg" alt="">
+        </div>
+        <div class="B">
+            <img src="/pexels-photo-1851164.jpeg" alt="">
+        </div>
+        <div>
+            <img src="/pexels-photo-208821.jpeg" alt="">
+        </div>
+        <div>
+            <img src="/pexels-photo-2295744.jpeg" alt="">
+        </div>
+        <div>
+            <img src="/pexels-photo-2538270.jpeg" alt="">
+        </div>
+        <div>
+            <img src="/pexels-photo-3113226.jpeg" alt="">
+        </div>
+        <div>
+            <img src="/thailand-elephant-sunset-nature-68550.jpeg" alt="">
+        </div>
+    </div>
+    
+    
+</body>
+</html>
